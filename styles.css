@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Apply a background image to the entire page */
+    background-image: url('web-1668927_1280.jpg');
+    background-size: cover; /* Make sure the image covers the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    font-family: Arial, sans-serif;
+    color: #000; /* Text color to contrast with background */
+    text-align: center; /* Center text alignment */
+    padding: 50px; /* Add some padding */
+    font-weight: 700;
+    font-size: large;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: large;
+    color: black;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+.hero {
+    background:  no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero .btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services, .portfolio, .testimonials, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2, .portfolio h2, .testimonials h2, .contact h2 {
+    margin-bottom: 30px;
+}
+
+.service-list, .portfolio-list, .testimonial-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service, .portfolio-item, .testimonial {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #e64a19;
+}
+
+.navbar {
+    justify-content: right;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar .hamburger, .navbar .cancel {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+.navbar .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  
+    width: 100%;
+}
+
+.navbar .menu a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-top: 1px solid #444;
+}
+
+.navbar .menu a:hover {
+    background-color: black;
+}
+
+.navbar .cancel {
+    display: none;
+}
+/* The popup container */
+.popup {
+    display: flex; /* Flex display for centering */
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+/* Popup content */
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styles */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+.men:hover  {
+    border-color: bisque;
+}
+.men {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    background-color: darkgray;
+}
