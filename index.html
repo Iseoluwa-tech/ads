@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script lang="javascript">
+    // Add event listener to the contact form
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your message. I will get back to you soon!');
+    document.getElementById('contact-form').reset();
+}
+);
+    </script>
+    <script lang="javascript">
+// Function to verify age
+function verifyAge(isAdult) {
+    if (isAdult) {
+        // Show the main content of the website
+        document.getElementById('age-verification').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+    } else {
+        // Attempt to close the website
+        alert("You must be 16 or older to access this website.");
+        window.close();
+    }
+}
+// Show the popup immediately when the page loads
+window.onload = function() {
+    document.getElementById('age-verification').style.display = 'flex';
+};
+    </script>
+</head>
+<body>
+    <div>
+        <div id="age-verification" class="popup">
+            <div class="popup-content">
+                <h1>Age verification</h1>
+            <p>Are you 16 years old or older?</p>
+            <button onclick="verifyAge(true)">Yes</button>
+            <button onclick="verifyAge(false)">No</button>
+            </div>
+        </div>
+    </div>
+
+ <!-- Navigation Bar -->
+ <nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <h1 style="color: white;">My Portfolio</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+     <!-- Hero Section -->
+     <section id="home" class="hero">
+        <div class="container">
+            <h1>Hi, I'm a Front-End Developer</h1>
+            <p>I create beautiful and responsive websites.</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="service-list">
+                <div class="service">
+                    <h3>Web Design</h3>
+                    <p>Creating visually appealing and user-friendly designs.</p>
+                </div>
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>Building responsive and functional websites.</p>
+                </div>
+                <div class="service">
+                    <h3>SEO Optimization</h3>
+                    <p>Improving your website's visibility on search engines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-list">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project 3</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What My Clients Say</h2>
+            <div class="testimonial-list">
+                <div class="testimonial">
+                    <p>"Amazing work! Highly recommend."</p>
+                    <h4>- Client 1</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Professional and timely delivery."</p>
+                    <h4>- Client 2</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Exceeded my expectations!"</p>
+                    <h4>- Client 3</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
